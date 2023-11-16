@@ -1,0 +1,46 @@
+body{
+    background-color: rgb(248, 235, 169);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    vertical-align: top;
+}
+
+.card{
+    width: 29vw;
+    border: 1px solid black;
+    margin: 0.1em 0.1em 0 0;
+    display: inline-block;
+    vertical-align: top;
+    min-height: 26vh;
+    font-size: 4vh
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 1em;
+    color: white;
+    background-color:rgb(46, 37, 37);
+    padding: 1em;
+    border-radius: 1em;;
+}
+a:hover{
+    text-decoration: underline;
+    color: gold;
+}
+
+select{
+    margin: 1em;
+    padding: 1em;
+    border-radius: 3em;
+}
+/* option{
+    padding: 1em;
+    margin: 1em;
+} */
+.img-1 {
+
+    width: 500px;
+
+}
