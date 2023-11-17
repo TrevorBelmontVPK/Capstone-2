@@ -49,4 +49,29 @@ document.addEventListener("DOMContentLoaded", e => {
     }
 
     showResults();
+
+
+        // SIXTH - LISTEN FOR LIST CHANGE SELECTION
+        list.addEventListener("change", event => {
+            let location = locationsArray.find(m => m.name == event.target.value); //FIND DATA
+            results.innerHTML = `<h1>${location.name}</h1>`; //SHOW RESULTS
+            results.innerHTML += location.desc;
+            results.innerHTML += `<h3>Elevation: ${location.elevation} feet</h3>`;
+            results.innerHTML += `<h3>Effort: ${location.effort}</h3>`;
+            results.innerHTML += `<img src="./images/${location.img}">`;
+    
+        }); //END LISTENER
+
+    searchButton.addEventListener("click", ()=> {
+
+        console.log(navbar.value)
+        let location = locationsArray.find(m => m.name.includes(navbar.value) ); //FIND DATA
+        results.innerHTML = `<h1>${location.name}</h1>`; //SHOW RESULTS
+        results.innerHTML += location.desc;
+        results.innerHTML += `<h3>Elevation: ${location.elevation} feet</h3>`;
+        results.innerHTML += `<h3>Effort: ${location.effort}</h3>`;
+        //results.innerHTML += `<img src="./images/${mountain.img}">`;
+    });
+
+
 }); //END LOADED

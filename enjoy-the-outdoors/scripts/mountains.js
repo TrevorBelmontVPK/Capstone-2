@@ -31,6 +31,13 @@ document.addEventListener("DOMContentLoaded", e => {
         results.innerHTML += `<img src="./images/${mountain.img}">`;
     });
     
+    searchInput.addEventListener("keyup", e=>{
+        results.innerHTML = "";
+        // let mountain = mountainsArray.find(m => m.desc.toLowerCase().includes(searchInput.value.toLowerCase())); //FIND DATA
+        // draw(mountain);
+        let mountainArray = mountainsArray.filter(m => m.desc.toLowerCase().includes(searchInput.value.toLowerCase())); //FIND DATA
+        mountainArray.forEach(draw);
+    })
     
 
 }); // END LOADED
