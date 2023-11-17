@@ -1,9 +1,11 @@
 body{
     background-color: rgb(169, 199, 248);
-    color: rgb(255, 253, 253);
+    color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     vertical-align: top;
+    margin: 0;
+    padding: 20px;
 }
 
 .card{
@@ -12,8 +14,9 @@ body{
     margin: 0.1em 0.1em 0 0;
     display: inline-block;
     vertical-align: top;
-    min-height: 26vh;
-    font-size: 4vh
+    min-height: 28vh;
+    font-size: 2vh
+    background-image: url('');
 }
 
 a{
@@ -21,7 +24,7 @@ a{
     display: inline-block;
     margin: 1em;
     color: white;
-    background-color:rgb(96, 75, 64);
+    background-color:rgb(116, 131, 161);
     padding: 1em;
     border-radius: 1em;;
 }
@@ -44,11 +47,13 @@ select{
     width: 500px;
 
 }
-
-h1{
-    text-align: center;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
-
-h2{
+video{
     text-align: center;
 }

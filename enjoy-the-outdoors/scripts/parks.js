@@ -24,9 +24,22 @@ document.addEventListener("DOMContentLoaded", e => {
     }
 
     function getCard(p) {
+        if(p.Phone == 0) {
+            p.Phone = ""
+        }
+        let visit = ""
+        if (p.Visit != undefined){
+            visit = `<a href="${p.Visit}">More Info.</a>`
+        }
         return `<div class="card">
         ${p.LocationName}
-        <div><b>${p.State}</b></div></div>`;
+        <div><b>${p.State}</b> </div>
+        <div><b>${p.City}</b> </div>
+        <div><b>${p.Phone}</b> </div>
+        <div><b>${p.Latitude}</b> </div>
+        <div><b>${p.Longitude}</b></div>
+       ${visit}
+        </div>`;
     }
 
     function showResults() {
