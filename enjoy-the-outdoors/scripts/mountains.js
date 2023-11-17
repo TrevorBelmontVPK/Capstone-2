@@ -17,6 +17,20 @@ document.addEventListener("DOMContentLoaded", e => {
         results.innerHTML += `<h3>Elevation: ${mountain.elevation} feet</h3>`;
         results.innerHTML += `<h3>Effort: ${mountain.effort}</h3>`;
         results.innerHTML += `<img src="./images/${mountain.img}">`;
+
     }); //END LISTENER
+
+    searchButton.addEventListener("click", ()=> {
+     
+        console.log(navbar.value)
+        let mountain = mountainsArray.find(m => m.name.includes(navbar.value) ); //FIND DATA
+        results.innerHTML = `<h1>${mountain.name}</h1>`; //SHOW RESULTS
+        results.innerHTML += mountain.desc;
+        results.innerHTML += `<h3>Elevation: ${mountain.elevation} feet</h3>`;
+        results.innerHTML += `<h3>Effort: ${mountain.effort}</h3>`;
+        results.innerHTML += `<img src="./images/${mountain.img}">`;
+    });
+    
+    
 
 }); // END LOADED
