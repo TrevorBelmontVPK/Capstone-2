@@ -5,6 +5,13 @@ let selectedParkType = "";
 
 // window.addEventListener("load", e => {
 document.addEventListener("DOMContentLoaded", e => {
+
+    searchButton.addEventListener("click", e=>{
+        filterText = searchInput.value;
+        showResults();
+    })
+
+
     locationsArray.forEach(location => locationsList.innerHTML += `<option>${location}</option>`);
     parkTypesArray.forEach(pt => parkTypeList.innerHTML += `<option>${pt}</option>`);
 
@@ -49,29 +56,19 @@ document.addEventListener("DOMContentLoaded", e => {
     }
 
     showResults();
+        
 
+    // searchButton.addEventListener("click", ()=> {
 
-        // SIXTH - LISTEN FOR LIST CHANGE SELECTION
-        list.addEventListener("change", event => {
-            let location = locationsArray.find(m => m.name == event.target.value); //FIND DATA
-            results.innerHTML = `<h1>${location.name}</h1>`; //SHOW RESULTS
-            results.innerHTML += location.desc;
-            results.innerHTML += `<h3>Elevation: ${location.elevation} feet</h3>`;
-            results.innerHTML += `<h3>Effort: ${location.effort}</h3>`;
-            results.innerHTML += `<img src="./images/${location.img}">`;
-    
-        }); //END LISTENER
-
-    searchButton.addEventListener("click", ()=> {
-
-        console.log(navbar.value)
-        let location = locationsArray.find(m => m.name.includes(navbar.value) ); //FIND DATA
-        results.innerHTML = `<h1>${location.name}</h1>`; //SHOW RESULTS
-        results.innerHTML += location.desc;
-        results.innerHTML += `<h3>Elevation: ${location.elevation} feet</h3>`;
-        results.innerHTML += `<h3>Effort: ${location.effort}</h3>`;
+        // console.log(navbar.value)
+        // let location = locationsArray.find(m => m.name.includes(navbar.value) ); //FIND DATA
+        // results.innerHTML = `<h1>${location.name}</h1>`; //SHOW RESULTS
+        // results.innerHTML += location.desc;
+        // results.innerHTML += `<h3>Elevation: ${location.elevation} feet</h3>`;
+        // results.innerHTML += `<h3>Effort: ${location.effort}</h3>`;
         //results.innerHTML += `<img src="./images/${mountain.img}">`;
-    });
+    // });
 
 
 }); //END LOADED
+
