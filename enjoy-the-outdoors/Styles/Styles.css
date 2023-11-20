@@ -1,30 +1,30 @@
 @font-face {
-    font-family: 'Bebas_Neue';
-    src: url(Fonts/BebasNeue-Regular.ttf) format('truetype');
+    font-family: 'BebasNeue-Regular.ttf';
+    src: url(./Fonts/Bebas_Neue/BebasNeue-Regular.ttf) format('truetype');
 }
 
 @font-face {
-    font-family: 'Anton-Regular';
-    src: url(Anton-Regular.ttf) format('truetype');
+    font-family: 'Anton-Regular.ttf';
+    src: url(./Fonts/Anton/Anton-Regular.ttf) format('truetype');
     font-weight: normal;
 }
 
 @font-face {
     font-family: 'JosefinSans-VariableFont_wght.ttf';
-    src: url(JosefinSans-VariableFont_wght.ttf) format('truetype')
+    src: url(./Fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf) format('truetype')
     font-weight: normal;
 }
 
 body{
     background-color: rgb(213, 178, 133);
-    color: rgb(255, 255, 255);
-    font-family: 'Anton-Regular', 'JosefinSans-VariableFont_wght.ttf', 'Bebas_Neue';
+    color: rgb(0, 0, 0);
+    font-family: 'Anton-Regular.ttf', 'JosefinSans-VariableFont_wght.ttf', 'BebasNeue-Regular.ttf';
     text-align: center;
     vertical-align: top;
     margin: 0;
     padding: 0px;
 }
-b
+
 .card{
     width: 29vw;
     border: 1px solid rgb(3, 3, 3);
@@ -82,10 +82,14 @@ video{
 
 h1 {
     font-size: 5em;
-    font-family: 'Anton-Regular';
+    font-family: 'Anton-Regular.ttf';
 }
 
 h2 {
     font-size: 2.6em;
-    font-family: 'Anton-Regular';
+    font-family: 'Anton-Regular.ttf';
+}
+
+.Shadow {
+    box-shadow: 0 6px 12px;
 }

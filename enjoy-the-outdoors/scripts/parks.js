@@ -46,20 +46,25 @@ document.addEventListener("DOMContentLoaded", e => {
         <div><b>${p.Longitude}</b></div>
        ${visit}
         </div>`;
-    } 
+    }
         
-  
-
     // searchButton.addEventListener("click", ()=> {
 
-        // console.log(navbar.value)
-        // let location = locationsArray.find(m => m.name.includes(navbar.value) ); //FIND DATA
-        // results.innerHTML = `<h1>${location.name}</h1>`; //SHOW RESULTS
-        // results.innerHTML += location.desc;
-        // results.innerHTML += `<h3>Elevation: ${location.elevation} feet</h3>`;
-        // results.innerHTML += `<h3>Effort: ${location.effort}</h3>`;
-        //results.innerHTML += `<img src="./images/${mountain.img}">`;
+    //     console.log(navbar.value)
+    //     let location = locationsArray.find(m => m.name.includes(navbar.value) ); //FIND DATA
+    //     results.innerHTML = `<h1>${location.name}</h1>`; //SHOW RESULTS
+    //     results.innerHTML += location.desc;
+    //     results.innerHTML += `<h3>Elevation: ${location.elevation} feet</h3>`;
+    //     results.innerHTML += `<h3>Effort: ${location.effort}</h3>`;
+    //     results.innerHTML += `<img src="">`;
     // });
+
+    // searchInput.addEventListener("keyup", e=>{
+    //     results.innerHTML = "";
+    //     let locationsArray = locationsArray.filter(m => m.desc.toLowerCase().includes(searchInput.value.toLowerCase())); //FIND DATA
+    //     locationsArrayArray.forEach(draw);
+    // })
+
     function showResults() {
         results.innerHTML = "";
         const filtered = nationalParksArray.filter(isMatch);
