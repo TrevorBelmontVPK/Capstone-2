@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", e => {
         showResults();
     })
 
-
     locationsArray.forEach(location => locationsList.innerHTML += `<option>${location}</option>`);
     parkTypesArray.forEach(pt => parkTypeList.innerHTML += `<option>${pt}</option>`);
 
@@ -29,7 +28,7 @@ document.addEventListener("DOMContentLoaded", e => {
         return (selectedLocation == "" || p.State == selectedLocation) &&
             (selectedParkType == "" || p.LocationName.includes(selectedParkType));
     }
-
+  
     function getCard(p) {
         if(p.Phone == 0) {
             p.Phone = ""
@@ -47,15 +46,7 @@ document.addEventListener("DOMContentLoaded", e => {
         <div><b>${p.Longitude}</b></div>
        ${visit}
         </div>`;
-    }
-
-    function showResults() {
-        results.innerHTML = "";
-        const filtered = nationalParksArray.filter(isMatch);
-        filtered.forEach(p => results.innerHTML += getCard(p));
-    }
-
-    showResults();
+    } 
         
 
     // searchButton.addEventListener("click", ()=> {
@@ -68,7 +59,13 @@ document.addEventListener("DOMContentLoaded", e => {
         // results.innerHTML += `<h3>Effort: ${location.effort}</h3>`;
         //results.innerHTML += `<img src="./images/${mountain.img}">`;
     // });
-
+    function showResults() {
+        results.innerHTML = "";
+        const filtered = nationalParksArray.filter(isMatch);
+        filtered.forEach(p => results.innerHTML += getCard(p));
+    }
+    
+    showResults();
 
 }); //END LOADED
 
