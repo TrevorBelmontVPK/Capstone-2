@@ -1,7 +1,24 @@
+@font-face {
+    font-family: 'Bebas_Neue';
+    src: url(Fonts/BebasNeue-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Anton-Regular';
+    src: url(Anton-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'JosefinSans-VariableFont_wght.ttf';
+    src: url(JosefinSans-VariableFont_wght.ttf) format('truetype')
+    font-weight: normal;
+}
+
 body{
     background-color: rgb(213, 178, 133);
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: 'Anton-Regular', 'JosefinSans-VariableFont_wght.ttf', 'Bebas_Neue';
     text-align: center;
     vertical-align: top;
     margin: 0;
@@ -61,4 +78,14 @@ video{
 }
 #results img {
     border-radius: 1em;
+}
+
+h1 {
+    font-size: 5em;
+    font-family: 'Anton-Regular';
+}
+
+h2 {
+    font-size: 2.6em;
+    font-family: 'Anton-Regular';
 }
