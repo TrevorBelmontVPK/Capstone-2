@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", e => {
     searchButton.addEventListener("click", ()=> {
      
         console.log(navbar.value)
-        let mountain = mountainsArray.find(m => m.name.includes(navbar.value) ); //FIND DATA
+        let mountain = mountainsArray.find(m => m.name.toLowerCase().includes(navbar.value.toLowerCase()) ); //FIND DATA
         results.innerHTML = `<h1>${mountain.name}</h1>`; //SHOW RESULTS
         results.innerHTML += mountain.desc;
         results.innerHTML += `<h3>Elevation: ${mountain.elevation} feet</h3>`;

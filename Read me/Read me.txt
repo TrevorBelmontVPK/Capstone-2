@@ -1,0 +1,18 @@
+The foundations were given us by Mr. Kevin Long in the demo.
+
+My contributions to this website were the redesign
+
+making the buttons work for the menu
+
+I'm still working on the font-family in the CSS
+
+With assistance from my classmate Daemeon Miller I was able to put shadows under my buttons
+
+I also made it to where the menu could drop done if the tab is stretched to half when it shows 3 bars on teh side
+
+I made sure my parks page was good as far as the buttons working
+
+Mr. Long helped me get my searchbar working for the mountains Page
+
+My design ideas were inspired by my classmate Jkeise Alfred
+
